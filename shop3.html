@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearls of Aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+</head>
+
+<body>
+  <header class="navigation-container">
+    <div class="logo">             
+         <a href="index.html">
+            <img src="images/logo.png" alt="Logo of Pearls of Aarhus" >
+        </a>
+    </div>
+    <nav class="nav-links">
+        <a href="ourPearls.html" >Our Pearls</a>
+        <a href="aboutPearls.html" >About Pearls</a>
+        <a href="sharePearl.html" >Share your Pearl</a>
+    </nav>
+</header>
+
+
+<main>
+    <div class="shop-info">
+        <div class="shop-info-image">
+            <img src="images/shop3.png" alt="Kirkens Korshær Genbrug">
+            <div class="shop-info-box">
+                <p>
+                    <strong>Kirkens Korshær Genbrug</strong><br>
+                    Vestergade 37<br>
+                    8000 Aarhus C<br>
+                    Phone: 8612 5646<br>
+                    <a href="kk@kirkenskorshaer.dk"> kk@kirkenskorshaer.dk</a><br>
+                    <strong>Opening hours:</strong><br>
+                    Monday-Thursday: 10-17<br>
+                    Friday: 11-17
+                </p>
+            </div>
+        </div>
+        <div class="shop-info-text">
+            <h1>Kirkens Korshær Genbrug ~ Help Others</h1>
+            <br>
+            <p>
+                If you love vintage treasures or just want to make a great find, the Church Cross Army Recycling store on Vestergade is a must-visit. <br> This cozy thrift store in Aarhus has everything from men’s and women’s clothing to household items, books, and even used furniture. It’s always fun to explore and find something unexpected.
+            <p>
+            <br>
+                <strong>Discover Hidden Pearls</strong><br>
+                Whether I’m hunting for seasonal clothes or unique décor, this store never disappoints.<br> They have a great selection for every occasion—whether it’s outfits for the holidays or special piece of furniture to spruce up my home. I can always count on finding something special among their shelves.
+            </p>
+            <br>
+            <p>
+                <strong>Giving Back to the Community</strong><br>
+                What makes shopping here even more meaningful is the knowledge that all proceeds go toward supporting vulnerable people in Denmark. <br>The store is run by dedicated volunteers, and their hard work makes a huge difference.<br> By shopping or donating, I'm not only supporting a good cause but also helping the environment through recycling.<br> Plus, if you're looking to volunteer, they’re always happy to welcome more helping hands.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="how-to-get-there">How to get there:</h2>
+    <div class="map-gallery-container">
+        <div id="map" class="mapstyle"></div>
+
+        <div class="gallery">
+            <h2>Our Pearls:</h2>
+            <div class="preview">
+                <img id="preview-img" src="images/preview3.JPG" alt="Preview">
+            </div>
+            <div class="carousel">
+                <img class="carousel-img" src="images/prewiev.png" alt="Item 1" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview2.JPG" alt="Item 2" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview3.JPG" alt="Item 3" onclick="changePreview(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="share-text">
+        You also found something nice? Share <a href="sharePearl.html">HERE</a>
+    </div>
+</main>
+
+<script src="javascript/map.js"></script>
+<script src="javascript/gallery.js"></script>
+<script>
+    // Initialize the map for Kirkens Korshær Genbrug
+    initializeMap(56.123456, 10.123456, 'Kirkens Korshær Genbrug'); // Replace with actual coordinates
+</script>
+</body>
+</html>

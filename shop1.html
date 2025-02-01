@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearls of Aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+</head>
+
+<body>
+  <header class="navigation-container">
+    <div class="logo">             
+         <a href="index.html">
+            <img src="images/logo.png" alt="Logo of Pearls of Aarhus" >
+        </a>
+    </div>
+    <nav class="nav-links">
+        <a href="ourPearls.html" >Our Pearls</a>
+        <a href="aboutPearls.html" >About Pearls</a>
+        <a href="sharePearl.html" >Share your Pearl</a>
+    </nav>
+</header>
+
+
+<main>
+    <div class="shop-info">
+        <div class="shop-info-image">
+            <img src="images/shop1.png" alt="Red Cross Højbjerg">
+            <div class="shop-info-box">
+                <p>
+                    <strong>Red Cross Højbjerg</strong><br>
+                    Oddervej 58A<br>
+                    8270 Højbjerg<br>
+                    Phone: 40 46 64 75<br>
+                    <p><a href="butik.hoejbjerg@rodekors.dk">butik.hoejbjerg@rodekors.dk</a><br>
+                    <strong>Opening hours:</strong><br>
+                    Monday-Thursday: 10-17<br>
+                    Friday: 10-16
+                </p>
+            </div>
+        </div>
+        <div class="shop-info-text">
+            <h1>Red Cross Højbjerg ~ Charity Treasure</h1>
+            <br>
+            <p>
+                I've been visiting this second-hand shop in Højbjerg for years now, and it never disappoints. <br>Located on the small shopping square at Oddervej, this charming store has a warm, welcoming atmosphere with its white walls and wooden floors.
+            </p>
+            <br>
+            <p>
+                <strong>What to Find There?</strong><br>
+                The shop offers a great selection of second-hand clothes for men, women, and kids, all in excellent condition.<br> In addition, I can find shoes, books, toys, and even handmade knitwear from locals.
+            </p>
+            <br>
+            <p>
+                <strong>Charity Work</strong><br>
+                What I love most is that all proceeds go to a good cause. It's a wonderful way to support the community while finding great treasures.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="how-to-get-there">How to get there:</h2>
+    <div class="map-gallery-container">
+        <div id="map" class="mapstyle"></div>
+        
+        <div class="gallery">
+            <h2>Our Pearls:</h2>
+            <div class="preview">
+                <img id="preview-img" src="images/preview3.JPG" alt="Preview">
+            </div>
+            <div class="carousel">
+                <img class="carousel-img" src="images/prewiev.png" alt="Item 1" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview2.JPG" alt="Item 2" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview3.JPG" alt="Item 3" onclick="changePreview(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="share-text">
+        You also found something nice? Share <a href="sharePearl.html">HERE</a>
+    </div>
+</main>
+
+<script src="javascript/map.js"></script>
+<script src="javascript/gallery.js"></script>
+<script>
+    // Initialize the map for Red Cross Højbjerg
+    initializeMap(56.123456, 10.123456, 'Red Cross Højbjerg'); // Replace with actual coordinates
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearls of Aarhus</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" /> 
+</head>
+
+<body>
+  <header class="navigation-container">
+    <div class="logo">             
+         <a href="index.html">
+            <img src="images/logo.png" alt="Logo of Pearls of Aarhus" >
+        </a>
+    </div>
+    <nav class="nav-links">
+        <a href="ourPearls.html" >Our Pearls</a>
+        <a href="aboutPearls.html" >About Pearls</a>
+        <a href="sharePearl.html" >Share your Pearl</a>
+    </nav>
+</header>
+
+
+<main>
+    <div class="shop-info">
+        <div class="shop-info-image">
+            <img src="images/shop2.png" alt="takeNow in Hoejbjerg">
+            <div class="shop-info-box">
+                <p>
+                    <strong>takeNOW</strong><br>
+                    Bjødstrupvej 20A<br>
+                    8270 Højbjerg<br>
+                    Phone: 6172 7025<br>
+                    <a href="aarhus@takenow.dk">aarhus@takenow.dk</a><br>
+                    <strong>Opening hours:</strong><br>
+                    Monday-Thursday: 10-18<br>
+                    Friday: 10-18
+                </p>
+            </div>
+        </div>
+        <div class="shop-info-text">
+            <h1>takeNOW in Højbjerg ~ Take it right now!</h1>
+            <br>
+            <p>
+                This is where I always find something special. As the first store in the chain, it has both a rich history and a unique vibe. Located near Ringvej Syd, it's easy to visit with ample parking right by the door. I particularly love the regular trunk markets, which are always full of hidden treasures.
+            </p>
+            <br>
+            <p>
+                <strong>What treasures await you here?</strong><br>
+                This store is all about carefully curated items. From vintage clothing to quirky collectibles, there's always something for everyone. The vendors at takeNOW go above and beyond, ensuring the store feels like a community hub. Every visit is a new adventure in finding unique pieces and getting to know the people behind the stands.
+            </p>
+            <br>
+            <p>
+                <strong>Shopping in Community</strong><br>
+                takeNOW isn’t just about shopping—it’s about giving back. The store is managed by Jan Scherfig, who’s passionate about connecting with customers and offering a great experience. His dedication to the store and the community makes every visit feel special. It’s more than just a place to shop; it’s a place where people come together.
+        </div>
+    </div>
+
+    <h2 class="how-to-get-there">How to get there:</h2>
+    <div class="map-gallery-container">
+        <div id="map" class="mapstyle"></div>
+
+        <div class="gallery">
+            <h2>Our Pearls:</h2>
+            <div class="preview">
+                <img id="preview-img" src="images/preview3.JPG" alt="Preview">
+            </div>
+            <div class="carousel">
+                <img class="carousel-img" src="images/prewiev.png" alt="Item 1" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview2.JPG" alt="Item 2" onclick="changePreview(this)">
+                <img class="carousel-img" src="images/preview3.JPG" alt="Item 3" onclick="changePreview(this)">
+            </div>
+        </div>
+    </div>
+
+    <div class="share-text">
+        You also found something nice? Share <a href="sharePearl.html">HERE</a>
+    </div>
+</main>
+
+<script src="javascript/map.js"></script>
+<script src="javascript/gallery.js"></script>
+<script>
+    // Initialize the map for takeNOW in Højbjerg
+    initializeMap(56.123456, 10.123456, 'takeNOW in Højbjerg'); // Replace with actual coordinates
+</script>
+</body>
+</html>
